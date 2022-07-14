@@ -1,0 +1,42 @@
+.pacman{
+    position: relative;
+   
+}
+
+.pacman-top{
+
+  width: 0px;
+  height: 0px;
+  border: 80px solid yellow;
+  border-right: 80px solid transparent;
+  position: relative;
+  border-radius: 80px;
+  margin: 20px;
+  animation: rotate-up 0.8s 4s infinite;
+}
+
+
+
+.pacman-bottom{
+    width: 0px;
+    height: 0px;
+    border: 80px solid yellow;
+    border-right: 80px solid transparent;
+    position: relative;
+    border-radius: 80px;
+    margin: 20px;
+    animation: rotate-down 0.8s 4s infinite;
+    margin-top: -180px;
+}
+
+@keyframes rotate-up {
+    0%{transform: rotate(270deg);}
+    50%{transform: rotate(360deg);}
+    100%{transform: rotate(270deg);}
+}
+
+@keyframes rotate-down {
+    0%{transform: rotate(90deg);}
+    50%{transform: rotate(0deg);}
+    100%{transform: rotate(90deg);}
+}
